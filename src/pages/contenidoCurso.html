@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html class="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        /> -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link href="../output.css" rel="stylesheet" />
+    </head>
+    <body
+        class="font-monoSans bg-background-light dark:bg-background-dark text-textPrimary-light"
+    >
+        <header
+            class="bg-primary-light dark:bg-primary-dark p-4 flex justify-center text-white fixed top-0 left-0 w-full shadow-md"
+        >
+            <div
+                class="container flex justify-between items-center mx-auto lg:w-11/12"
+            >
+                <div class="flex items-center md:justify-around lg:w-80">
+                    <a href="../index.html"
+                        ><i class="material-icons">home</i></a
+                    >
+                    <div class="hidden md:flex justify-between space-x-2">
+                        <select
+                            name="categoriasCursos"
+                            id="categoriasCursos"
+                            class="text-black rounded-md"
+                        >
+                            <option value="">Categorias</option>
+                            <option value="">Tecnologia e Informática</option>
+                            <option value="">Negocios y Emprendimiento</option>
+                            <option value="">Diseño y Creatividad</option>
+                            <option value="">Desarrollo Personal</option>
+                            <option value="">Idiomas</option>
+                            <option value="">Ciencia y Matematicas</option>
+                            <option value="">Salud y Bienestar</option>
+                            <option value="">Artes y Humanidades</option>
+                            <option value="">Educacion y Pedagogía</option>
+                            <option value="">Ciencia y Medio Ambiente</option>
+                        </select>
+                        <a href="foro.html">Foro</a>
+                    </div>
+                </div>
+                <form action="" class="hidden md:block">
+                    <div class="relative">
+                        <input
+                            type="text"
+                            placeholder="Ej. Diseño, Ingles, Desarrollo Profesional,etc"
+                            class="pl-10 border rounded-md lg:w-[500px]"
+                        />
+                        <a href="busqueda.html">
+                            <i
+                                class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500"
+                            ></i>
+                        </a>
+                    </div>
+                </form>
+                <div class="flex items-center space-x-3">
+                    <div class="hidden md:flex">
+                        <a href="iniciarSesion.html">Iniciar Sesión</a>
+                    </div>
+
+                    <div class="flex items-center space-x-1">
+                        <a href="carrito.html" class="flex">
+                            <i class="material-icons">shopping_cart</i>
+                        </a>
+                    </div>
+                    <button href="" class="darkMode flex">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <i class="material-icons md:hidden">menu</i>
+                </div>
+            </div>
+        </header>
+
+        <main class="mt-16 w-11/12 mx-auto space-y-8 md:w-10/12">
+            <!-- Seccion Video  -->
+            <section class="lg:grid lg:grid-cols-[70%_30%]">
+                <video class="w-full h-auto lg:min-h-[420px] lg:max-h-[420px] " muted controls>
+                    <source
+                        src="https://pagedone.io/asset/uploads/1705298724.mp4"
+                        type="video/mp4"
+                    />
+                    <track
+                        src="subtitulos.vtt"
+                        kind="subtitles"
+                        srclang="es"
+                        label="Español"
+                    />
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <div class="mx-auto max-h-64 lg:min-h-[420px] lg:max-h-[420px] overflow-y-auto">
+                    <details class="border border-gray-300 rounded-md mb-2">
+                        <summary
+                            class="cursor-pointer bg-gray-100 p-2 rounded-md hover:bg-gray-200"
+                        >
+                            Los proyectos que construiremos en este curso
+                        </summary>
+                        <div class="p-2 border border-green-600">
+                            <a src="#"><p>Proyecto 1 - Básico</p></a>
+                            <a src="#"><p>Proyecto 2 - Básico</p></a>
+                            <a src="#"><p>Proyecto 3 - Básico</p></a>
+                            <a src="#"><p>Proyecto 4 - Intermedio</p></a>
+                            <a src="#"><p>Proyecto 5 - Intermedio</p></a>
+                            <a src="#"><p>Proyecto 6 - Avanzado</p></a>
+                            <a src="#"><p>Proyecto 7 - Final</p></a>
+                        </div>
+                    </details>
+
+                    <details class="border border-gray-300 rounded-md mb-2">
+                        <summary
+                            class="cursor-pointer bg-gray-100 p-2 rounded-md hover:bg-gray-200"
+                        >
+                            Proyecto 1: Creando El proyecto paso a paso en HTML
+                        </summary>
+                        <div class="p-2">
+                            <a src="#"><p>Video 1</p></a>
+                            <a src="#"><p>Video 2</p></a>
+                            <a src="#"><p>Video 3</p></a>
+                            <a src="#"><p>Video 4</p></a>
+                            <a src="#"><p>Video 5</p></a>
+                            <a src="#"><p>Video 6</p></a>
+                            <a src="#"><p>Video 7</p></a>
+                            <a src="#"><p>Video 8</p></a>
+                            <a src="#"><p>Video 9</p></a>
+                            <a src="#"><p>Video 10</p></a>
+                        </div>
+                    </details>
+
+                    <details class="border border-gray-300 rounded-md mb-2">
+                        <summary
+                            class="cursor-pointer bg-gray-100 p-2 rounded-md hover:bg-gray-200"
+                        >
+                            Proyecto 1: Agregando estilos con CSS
+                        </summary>
+                        <div class="p-2">
+                            <a src="#"><p>Video 1</p></a>
+                            <a src="#"><p>Video 2</p></a>
+                            <a src="#"><p>Video 3</p></a>
+                            <a src="#"><p>Video 4</p></a>
+                            <a src="#"><p>Video 5</p></a>
+                            <a src="#"><p>Video 6</p></a>
+                            <a src="#"><p>Video 7</p></a>
+                            <a src="#"><p>Video 8</p></a>
+                            <a src="#"><p>Video 9</p></a>
+                            <a src="#"><p>Video 10</p></a>
+                        </div>
+                    </details>
+
+                    <details class="border border-gray-300 rounded-md mb-2">
+                        <summary
+                            class="cursor-pointer bg-gray-100 p-2 rounded-md hover:bg-gray-200"
+                        >
+                            Proyecto 1: Introducción a CSS Flex
+                        </summary>
+                        <div class="p-2">
+                            <a src="#"><p>Video 1</p></a>
+                            <a src="#"><p>Video 2</p></a>
+                            <a src="#"><p>Video 3</p></a>
+                            <a src="#"><p>Video 4</p></a>
+                            <a src="#"><p>Video 5</p></a>
+                            <a src="#"><p>Video 6</p></a>
+                            <a src="#"><p>Video 7</p></a>
+                            <a src="#"><p>Video 8</p></a>
+                            <a src="#"><p>Video 9</p></a>
+                            <a src="#"><p>Video 10</p></a>
+                        </div>
+                    </details>
+
+                    <details class="border border-gray-300 rounded-md mb-2">
+                        <summary
+                            class="cursor-pointer bg-gray-100 p-2 rounded-md hover:bg-gray-200"
+                        >
+                            Proyecto 1: Introducción a CSS Grid
+                        </summary>
+                        <div class="p-2">
+                            <a src="#"><p>Video 1</p></a>
+                            <a src="#"><p>Video 2</p></a>
+                            <a src="#"><p>Video 3</p></a>
+                            <a src="#"><p>Video 4</p></a>
+                            <a src="#"><p>Video 5</p></a>
+                            <a src="#"><p>Video 6</p></a>
+                            <a src="#"><p>Video 7</p></a>
+                            <a src="#"><p>Video 8</p></a>
+                            <a src="#"><p>Video 9</p></a>
+                            <a src="#"><p>Video 10</p></a>
+                        </div>
+                    </details>
+
+                    <details class="border border-gray-300 rounded-md mb-2">
+                        <summary
+                            class="cursor-pointer bg-gray-100 p-2 rounded-md hover:bg-gray-200"
+                        >
+                            Proyecto 1: Responsive Design
+                        </summary>
+                        <div class="p-2">
+                            <a src="#"><p>Video 1</p></a>
+                            <a src="#"><p>Video 2</p></a>
+                            <a src="#"><p>Video 3</p></a>
+                            <a src="#"><p>Video 4</p></a>
+                            <a src="#"><p>Video 5</p></a>
+                            <a src="#"><p>Video 6</p></a>
+                            <a src="#"><p>Video 7</p></a>
+                            <a src="#"><p>Video 8</p></a>
+                            <a src="#"><p>Video 9</p></a>
+                            <a src="#"><p>Video 10</p></a>
+                        </div>
+                    </details>
+                    <details class="border border-gray-300 rounded-md mb-2">
+                        <summary
+                            class="cursor-pointer bg-gray-100 p-2 rounded-md hover:bg-gray-200"
+                        >
+                            Proyecto 1: Ultimos retoques del primer proyecto
+                        </summary>
+                        <div class="p-2">
+                            <a src="#"><p>Video 1</p></a>
+                            <a src="#"><p>Video 2</p></a>
+                            <a src="#"><p>Video 3</p></a>
+                            <a src="#"><p>Video 4</p></a>
+                            <a src="#"><p>Video 5</p></a>
+                            <a src="#"><p>Video 6</p></a>
+                            <a src="#"><p>Video 7</p></a>
+                            <a src="#"><p>Video 8</p></a>
+                            <a src="#"><p>Video 9</p></a>
+                            <a src="#"><p>Video 10</p></a>
+                        </div>
+                    </details>
+                    <details class="border border-gray-300 rounded-md mb-2">
+                        <summary
+                            class="cursor-pointer bg-gray-100 p-2 rounded-md hover:bg-gray-200"
+                        >
+                            Proyecto 2: Principios Basicos de Metodologia BEM
+                        </summary>
+                        <div class="p-2">
+                            <a src="#"><p>Video 1</p></a>
+                            <a src="#"><p>Video 2</p></a>
+                            <a src="#"><p>Video 3</p></a>
+                            <a src="#"><p>Video 4</p></a>
+                            <a src="#"><p>Video 5</p></a>
+                            <a src="#"><p>Video 6</p></a>
+                            <a src="#"><p>Video 7</p></a>
+                            <a src="#"><p>Video 8</p></a>
+                            <a src="#"><p>Video 9</p></a>
+                            <a src="#"><p>Video 10</p></a>
+                        </div>
+                    </details>
+                    <details class="border border-gray-300 rounded-md mb-2">
+                        <summary
+                            class="cursor-pointer bg-gray-100 p-2 rounded-md hover:bg-gray-200"
+                        >
+                            Proyecto 2: Introduccion a EcmaScript 2016
+                        </summary>
+                        <div class="p-2">
+                            <a src="#"><p>Video 1</p></a>
+                            <a src="#"><p>Video 2</p></a>
+                            <a src="#"><p>Video 3</p></a>
+                            <a src="#"><p>Video 4</p></a>
+                            <a src="#"><p>Video 5</p></a>
+                            <a src="#"><p>Video 6</p></a>
+                            <a src="#"><p>Video 7</p></a>
+                            <a src="#"><p>Video 8</p></a>
+                            <a src="#"><p>Video 9</p></a>
+                            <a src="#"><p>Video 10</p></a>
+                        </div>
+                    </details>
+                    <details class="border border-gray-300 rounded-md mb-2">
+                        <summary
+                            class="cursor-pointer bg-gray-100 p-2 rounded-md hover:bg-gray-200"
+                        >
+                            Proyecto 2: Programacion Orientada a Objetos en Javascript
+                        </summary>
+                        <div class="p-2">
+                            <a src="#"><p>Video 1</p></a>
+                            <a src="#"><p>Video 2</p></a>
+                            <a src="#"><p>Video 3</p></a>
+                            <a src="#"><p>Video 4</p></a>
+                            <a src="#"><p>Video 5</p></a>
+                            <a src="#"><p>Video 6</p></a>
+                            <a src="#"><p>Video 7</p></a>
+                            <a src="#"><p>Video 8</p></a>
+                            <a src="#"><p>Video 9</p></a>
+                            <a src="#"><p>Video 10</p></a>
+                        </div>
+                    </details>
+                    <details class="border border-gray-300 rounded-md mb-2">
+                        <summary
+                            class="cursor-pointer bg-gray-100 p-2 rounded-md hover:bg-gray-200"
+                        >
+                            Proyecto 2: DOM
+                        </summary>
+                        <div class="p-2">
+                            <a src="#"><p>Video 1</p></a>
+                            <a src="#"><p>Video 2</p></a>
+                            <a src="#"><p>Video 3</p></a>
+                            <a src="#"><p>Video 4</p></a>
+                            <a src="#"><p>Video 5</p></a>
+                            <a src="#"><p>Video 6</p></a>
+                            <a src="#"><p>Video 7</p></a>
+                            <a src="#"><p>Video 8</p></a>
+                            <a src="#"><p>Video 9</p></a>
+                            <a src="#"><p>Video 10</p></a>
+                        </div>
+                    </details>
+                </div>
+            </section>
+
+            <!-- Seccion Informacion curso  -->
+            <div class="space-y-2">
+                <h2 class="text-xl font-semibold">Información del curso</h2>
+                <div
+                    class="space-y-2 md:space-y-6 lg:text-xl border border-dashed border-background-dark rounded-xl p-2"
+                >
+                    <p class="font-semibold">
+                        Categoria:
+                        <span class="font-normal">Programación Web</span>
+                    </p>
+                    <div class="flex flex-col space-y-2">
+                        <p class="text-lg font-semibold lg:text-2xl">
+                            Master Frontend NextJs 15 | HTML, CSS, JS, React, Responsive Desgin
+                        </p>
+                        <div class="flex text-secondary-light">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div
+                            class="flex justify-between lg:justify-normal md:flex-row md:space-x-2"
+                        >
+                            <p>132 clases</p>
+                            <div class="flex items-center space-x-1">
+                                <i class="fa-solid fa-clock"></i>
+
+                                <p>14 horas en total</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seccion Progreso  -->
+            <div class="space-y-4">
+                <h2 class="font-semibold text-xl">Tu Progreso</h2>
+                <div class="relative w-full mx-auto">
+                    <input
+                        type="text"
+                        class="bg-gray-200 rounded-xl w-full h-6 pl-2"
+                    />
+                    <div
+                        class="absolute inset-0 flex items-center justify-start bg-secondary-light rounded-xl h-6 w-3/6"
+                    ></div>
+                    <p class="absolute inset-0 left-32 md:left-[350px] lg:left-[390px] xl:left-[550px] font-semibold">44%</p>
+                </div>
+            </div>
+
+            <!-- Seccion consultas -->
+            <section class="space-y-4">
+                <h2 class="text-xl font-semibold">Consulta de los alumnos</h2>
+                
+                <div
+                    class="bg-background-dark bg-opacity-25 rounded-2xl p-4 flex justify-center space-x-2 md:justify-start"
+                >
+                    <div>
+                        <i
+                            class="fa-solid fa-user text-6xl bg-white rounded-full p-6 text-center md:text-left"
+                        ></i>
+                    </div>
+                    <div class="space-y-2">
+                        <p>mirthapontevechhia@outlook.com</p>
+                        <p class="font-semibold">
+                            ¿Por qué el programa no funciona en mi pc?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores repellat maiores possimus odio impedit laboriosam ad ipsam quae similique.
+                            <span class="hidden lg:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores repellat maiores possimus odio impedit laboriosam ad ipsam quae similique.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores repellat maiores possimus odio impedit laboriosam ad ipsam quae similique.
+                            </span></p>
+                        <div>
+                            <a href="#" class="flex items-center space-x-3">
+                                <i class="fa-regular fa-message"></i>
+                                <p>26 respuestas</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-background-dark bg-opacity-25 rounded-2xl p-4 flex justify-center space-x-2"
+                >
+                    <div>
+                        <i
+                            class="fa-solid fa-user text-6xl bg-white rounded-full p-6 text-center"
+                        ></i>
+                    </div>
+                    <div class="space-y-2">
+                        <p>mirthapontevechhia@outlook.com</p>
+                        <p class="font-semibold">
+                            Tengo dudas con una pregunta de la lección
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. A voluptates nisi libero esse possimus ipsa,
+                            officia facere eaque accusantium omnis.
+                            officia facere eaque accusantium omnis.
+                            officia facere eaque accusantium omnis.
+                        </p>
+                        <div>
+                            <a href="#" class="flex items-center space-x-3">
+                                <i class="fa-regular fa-message"></i>
+                                <p>26 respuestas</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-lg">
+                        ¿Tenes alguna duda? Visita nuestro
+                        <a href="foro.html" class="text-secondary-light">foro</a> 
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <!-- <p>
+            Master Frontend NextJs 15 | HTML, CSS, JS, React, Responsive Desgin
+        </p> -->
+
+        <!-- Footer  -->
+        <footer
+            class="bg-primary-light dark:bg-primary-dark text-white md:min-h-44 md:flex mt-6"
+        >
+            <div
+                class="md:w-5/6 md:mx-auto flex flex-col space-y-4 md:space-y-0 md:flex-none md:grid md:grid-cols-3 md:items-center p-4"
+            >
+                <div class="md:mx-auto">
+                    <div class="flex flex-col">
+                        <a href="">¿Quienes somos?</a>
+                        <a href="">Ayuda y asistencia</a>
+                        <a href="">Condiciones</a>
+                        <a href="">Politica y Privacidad</a>
+                    </div>
+                </div>
+                <div class="md:mx-auto">
+                    <div class="flex flex-col">
+                        <a href="">Foro</a>
+                        <a href="">Categorias</a>
+                        <a href="">Cursos</a>
+                        <a href="">Preguntas Frecuentes</a>
+                    </div>
+                </div>
+                <div class="md:mx-auto">
+                    <div class="flex flex-col space-y-2">
+                        <h2>Contacto</h2>
+                        <div class="text-2xl flex justify-between w-40">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <script src="../app.js"></script>
+    <!-- <script>
+        function toggleDarkMode() {
+          document.documentElement.classList.toggle('dark');
+        }
+      </script> -->
+</html>

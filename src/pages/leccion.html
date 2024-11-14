@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html class="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        /> -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link href="../output.css" rel="stylesheet" />
+    </head>
+    <body
+        class="font-monoSans bg-background-light dark:bg-background-dark text-textPrimary-light dark:text-textSecondary-dark"
+    >
+        <header
+            class="bg-primary-light dark:bg-primary-dark p-4 flex justify-center text-white fixed top-0 left-0 w-full shadow-md"
+        >
+            <div
+                class="container flex justify-between items-center mx-auto lg:w-11/12"
+            >
+                <div class="flex items-center md:justify-around lg:w-80">
+                    <a href="../index.html"
+                        ><i class="material-icons">home</i></a
+                    >
+                    <div class="hidden md:flex justify-between space-x-2">
+                        <select
+                            name="categoriasCursos"
+                            id="categoriasCursos"
+                            class="text-black rounded-md"
+                        >
+                            <option value="">Categorias</option>
+                            <option value="">Tecnologia e Informática</option>
+                            <option value="">Negocios y Emprendimiento</option>
+                            <option value="">Diseño y Creatividad</option>
+                            <option value="">Desarrollo Personal</option>
+                            <option value="">Idiomas</option>
+                            <option value="">Ciencia y Matematicas</option>
+                            <option value="">Salud y Bienestar</option>
+                            <option value="">Artes y Humanidades</option>
+                            <option value="">Educacion y Pedagogía</option>
+                            <option value="">Ciencia y Medio Ambiente</option>
+                        </select>
+                        <a href="foro.html">Foro</a>
+                    </div>
+                </div>
+                <form action="" class="hidden md:block">
+                    <div class="relative">
+                        <input
+                            type="text"
+                            placeholder="Ej. Diseño, Ingles, Desarrollo Profesional,etc"
+                            class="pl-10 border rounded-md lg:w-[500px]"
+                        />
+                        <a href="busqueda.html">
+                            <i
+                                class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500"
+                            ></i>
+                        </a>
+                    </div>
+                </form>
+                <div class="flex items-center space-x-3">
+                    <div class="hidden md:flex">
+                        <a href="iniciarSesion.html">Iniciar Sesión</a>
+                    </div>
+
+                    <div class="flex items-center space-x-1">
+                        <a href="carrito.html" class="flex">
+                            <i class="material-icons">shopping_cart</i>
+                        </a>
+                    </div>
+                    <button href="" class="darkMode flex">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <i class="material-icons md:hidden">menu</i>
+                </div>
+            </div>
+        </header>
+
+        <main class="mt-24 w-11/12 mx-auto space-y-8 md:w-6/12">
+            <h1 class="font-bold text-2xl text-center">
+                Lección 1: HTML, CSS y Javascript
+            </h1>
+            <div class="space-y-2">
+                <p class="text-lg font-semibold lg:text-2xl">
+                    Master Frontend NextJs 15 | HTML, CSS, JS, React, Responsive
+                    Design
+                </p>
+                <p class="font-semibold">
+                    Categoria:
+                    <span class="font-normal">Programación Web</span>
+                </p>
+            </div>
+
+            <form action="" class="space-y-8">
+                <fieldset class="space-y-4">
+                    <div>
+                        <legend class="mb-4" for="">
+                            1. ¿En que tipo de etiqueta se usa `charset="UTF-8`
+                            en HTML?
+                        </legend>
+
+                        <div>
+                            <input type="radio" name="p1" />
+                            <label for="">body</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p1" />
+                            <label for="">meta</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p1" />
+                            <label for="">html</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p1" />
+                            <label for="">head</label>
+                        </div>
+                    </div>
+                    <div>
+                        <legend class="mb-4" for="">
+                            2. ¿Qué etiqueta se utiliza para crear un enlace en
+                            HTML?
+                        </legend>
+
+                        <div>
+                            <input type="radio" name="p2" />
+                            <label for="">link</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p2" />
+                            <label for="">a</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p2" />
+                            <label for="">href</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p2" />
+                            <label for="">url</label>
+                        </div>
+                    </div>
+                    <div>
+                        <legend class="mb-4" for="">
+                            3. ¿Qué atributo HTML se utiliza para abrir un
+                            enlace en una nueva pestaña?
+                        </legend>
+
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">href="_blank"</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">target="_new"</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">target="_blank"</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">href="_new"</label>
+                        </div>
+                    </div>
+                    <div>
+                        <legend class="mb-4" for="">
+                            4. ¿Cuál de las siguientes propiedades de CSS se usa
+                            para cambiar el color de fondo de un elemento?
+                        </legend>
+
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">color</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">background</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">font-color</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">bgcolor</label>
+                        </div>
+                    </div>
+                    <div>
+                        <legend class="mb-4" for="">
+                            5. ¿Qué propiedad CSS se usa para alinear el texto
+                            al centro?
+                        </legend>
+
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">text-style: center</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">align-text: center</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">text-align: center</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">align: center </label>
+                        </div>
+                    </div>
+                    <div>
+                        <legend class="mb-4" for="">
+                            6. ¿Qué propiedad CSS define el espacio dentro de un
+                            elemento?
+                        </legend>
+
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">margin</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">spacing</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">padding</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">border</label>
+                        </div>
+                    </div>
+                    <div>
+                        <legend class="mb-4" for="">
+                            7. ¿Cuál de estas opciones es una consulta de medios
+                            válida en CSS para pantallas de hasta 600px de
+                            ancho?
+                        </legend>
+
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for=""
+                                >@media screen and (max-width: 600px)</label
+                            >
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">@media screen width 600px</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">@media (screen-width: 600px)</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">@media max-width: 600px</label>
+                        </div>
+                    </div>
+                    <div>
+                        <legend class="mb-4" for="">
+                            8. ¿Cuál es la sintaxis correcta para declarar una
+                            función en JavaScript?
+                        </legend>
+
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">function: miFuncion() {}</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">function miFuncion() {}</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">func miFuncion() {}</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">miFuncion function() {}</label>
+                        </div>
+                    </div>
+                    <div>
+                        <legend class="mb-4" for="">
+                            9. ¿Qué método se utiliza para escribir un mensaje
+                            en la consola en JavaScript?
+                        </legend>
+
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">console.log()</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">console.write()</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">log.console()</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="p3" />
+                            <label for="">write.console()</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="md:text-right">
+                    <button
+                        class="bg-secondary-light w-full md:w-auto text-xl text-white font-semibold p-2 rounded-md text-center"
+                    >
+                        Enviar Cuestionario
+                    </button>
+                </div>
+            </form>
+        </main>
+        <!-- Footer  -->
+        <footer
+            class="bg-primary-light dark:bg-primary-dark text-white md:min-h-44 md:flex mt-6"
+        >
+            <div
+                class="md:w-5/6 md:mx-auto flex flex-col space-y-4 md:space-y-0 md:flex-none md:grid md:grid-cols-3 md:items-center p-4"
+            >
+                <div class="md:mx-auto">
+                    <div class="flex flex-col">
+                        <a href="">¿Quienes somos?</a>
+                        <a href="">Ayuda y asistencia</a>
+                        <a href="">Condiciones</a>
+                        <a href="">Politica y Privacidad</a>
+                    </div>
+                </div>
+                <div class="md:mx-auto">
+                    <div class="flex flex-col">
+                        <a href="">Foro</a>
+                        <a href="">Categorias</a>
+                        <a href="">Cursos</a>
+                        <a href="">Preguntas Frecuentes</a>
+                    </div>
+                </div>
+                <div class="md:mx-auto">
+                    <div class="flex flex-col space-y-2">
+                        <h2>Contacto</h2>
+                        <div class="text-2xl flex justify-between w-40">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <script src="../app.js"></script>
+    <!-- <script>
+        function toggleDarkMode() {
+          document.documentElement.classList.toggle('dark');
+        }
+      </script> -->
+</html>
+
+
