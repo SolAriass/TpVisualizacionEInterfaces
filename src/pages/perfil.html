@@ -298,50 +298,66 @@
                 <form action="" class="space-y-4 md:text-xl">
                     <div class="flex justify-between items-center space-x-2">
                         <label for="">Nombre:</label>
+                        <div class="relative md:w-5/6">
                         <input
                             type="text"
                             value="Lorena Carmen"
                             disabled
-                            class="rounded-2xl p-2 md:w-4/6"
+                            class="rounded-2xl p-2 md:w-full"
                         />
+                        
+                            <i class="fa-solid fa-pen cursor-pointer absolute right-3 top-1/2 transform -translate-y-1/2"></i>
+                        </div>
                     </div>
                     <div class="flex justify-between items-center space-x-2">
                         <label for="" class="text-lg">Email:</label>
+                        <div class="relative md:w-5/6">
                         <input
                             type="email"
                             value="lalorecar@gmail.com"
                             disabled
-                            class="rounded-2xl p-2 md:w-4/6"
+                            class="rounded-2xl p-2 md:w-full"
                         />
+                        
+                          <i class="fa-solid fa-pen cursor-pointer absolute right-3 top-1/2 transform -translate-y-1/2"></i>
+                        </div>
                     </div>
                     <div class="flex justify-between items-center space-x-2">
                         <label for="">Contraseña:</label>
+                        <div class="relative md:w-5/6">
                         <input
                             type="password"
                             value="anashe123"
                             disabled
-                            class="rounded-2xl p-2 md:w-4/6"
+                            class="rounded-2xl p-2 md:w-full"
                         />
+                        
+                            <i class="fa-solid fa-pen cursor-pointer absolute right-3 top-1/2 transform -translate-y-1/2"></i>
+                        </div>
                     </div>
                     <div class="flex justify-between items-center space-x-2">
                         <label for="">Telefono:</label>
-                        <input
-                            type="tel"
-                            value="1187364928"
-                            disabled
-                            class="rounded-2xl p-2 md:w-4/6"
-                        />
+                        <div class="relative md:w-5/6">
+                            <input
+                                type="tel"
+                                value="1187364928"
+                                disabled
+                                class="rounded-2xl p-2 md:w-full"
+                            />
+                            <i class="fa-solid fa-pen cursor-pointer absolute right-3 top-1/2 transform -translate-y-1/2"></i>
+                        </div>
                     </div>
                 </form>
             </div>
 
-            <div class="text-center">
+            <div class="text-center" id="boton-cerrarSesion">
                 <a
+                    
                     href="#"
                     class="bg-secondary-light w-full md:w-auto text-xl text-white dark:text-textPrimary-light font-semibold p-2 rounded-md text-center"
                 >
                     Cerrar Sesión
-                </a>
+                </a>    
             </div>
         </main>
 
