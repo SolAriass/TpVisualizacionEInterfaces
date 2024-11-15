@@ -1,11 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html class="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        /> -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link href="../output.css" rel="stylesheet" />
+    </head>
+    <body
+        class="font-monoSans bg-background-light dark:bg-background-dark text-textPrimary-light"
+    >
+    <header
+    class="bg-primary-light dark:bg-primary-dark p-4 flex justify-center text-white fixed top-0 left-0 w-full shadow-md"
+    >
+        <div
+            class="container flex justify-between items-center mx-auto lg:w-11/12"
+        >
+            <div class="flex items-center md:justify-around lg:w-80">
+                <a href="../index.html"
+                    ><i class="material-icons">home</i></a
+                >
+                <div class="hidden md:flex justify-between space-x-2">
+                
+                    <a href="foro.html">Foro</a>
+                </div>
+            </div>
+            <form action="" class="hidden md:block">
+                <div class="relative">
+                    <input
+                        type="text"
+                        placeholder="Ej. Diseño, Ingles, Desarrollo Profesional,etc"
+                        class="pl-10 border rounded-md lg:w-[500px]"
+                    />
+                    <a href="busqueda.html">
+                        <i
+                            class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500"
+                        ></i>
+                    </a>
+                
+                    <button>
+                        <a href="busqueda.html">BUSCAR</a></button>
+                </div>
+            </form>
+            <div class="flex items-center space-x-3">
+                <div class="hidden md:flex">
+                    <a href="iniciarSesion.html">Iniciar Sesión</a>
+                </div>
+
+                <div class="flex items-center space-x-1">
+                    <a href="carrito.html" class="flex">
+                        <i class="material-icons">shopping_cart</i>
+                    </a>
+                </div>
+                <button href="" class="darkMode flex">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <i class="material-icons md:hidden">menu</i>
+            </div>
+        </div>
+    </header>
+
+    <main id="cuerpo-publicaciones">
+
+        <h1 id="foro">Foro de novedades</h1>
+
+        <article class="publicacion">
+            <div class="publicacion-info">
+                <h2 class="titulo-publicacion">Nuevo curso de Python!</h2>
+                <p class="texto-publicacion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                <img src="https://i.ytimg.com/vi/chPhlsHoEPo/maxresdefault.jpg" alt="img-post" class="img-post">  
+                <button class="boton-me-gusta"><i class="fa-solid fa-heart"></i> Me gusta</button>
+            </div>
+            <div class="publicacion-comentarios">
+                <div class="comentario">
+                    <img src="https://toppng.com/uploads/preview/flat-faces-icons-circle-persona-icon-115628952315akhsf8ncl.png" alt="persona-comentario" class="foto-perfil-comentario">
+                    <div class="contenido-comentario">
+                        <h3 class="usuario-comentario">Pedro Perez</h3>
+                        <p class="texto-comentario">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="comentario">
+                    <img src="https://toppng.com/uploads/preview/flat-faces-icons-circle-persona-icon-115628952315akhsf8ncl.png" alt="persona-comentario" class="foto-perfil-comentario">
+                    <div class="contenido-comentario">
+                        <h3 class="usuario-comentario">Juan Martinez</h3>
+                        <p class="texto-comentario">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+                </div>
+                <a href="#" class="ver-comentarios">Ver todos los comentarios</a>
+                <div class="comentario">
+                    <input type="text" placeholder="Escribe un comentario..." class="escribir-comentario">
+                    <a href="iniciarSesion.html"><button class="boton-publicar-comentario">Publicar</button></a>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="publicacion">
+            <div class="publicacion-info">
+                <h2 class="titulo-publicacion">Nuevo curso de JavaScript!</h2>
+                <p class="texto-publicacion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                <img src="https://i.ytimg.com/vi/z95mZVUcJ-E/maxresdefault.jpg" alt="img-post" class="img-post">  
+                <button class="boton-me-gusta"><i class="fa-solid fa-heart"></i> Me gusta</button>
+            </div>
+            <div class="publicacion-comentarios">
+                <div class="comentario">
+                    <img src="https://toppng.com/uploads/preview/flat-faces-icons-circle-persona-icon-115628952315akhsf8ncl.png" alt="persona-comentario" class="foto-perfil-comentario">
+                    <div class="contenido-comentario">
+                        <h3 class="usuario-comentario">Pedro Perez</h3>
+                        <p class="texto-comentario">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="comentario">
+                    <img src="https://toppng.com/uploads/preview/flat-faces-icons-circle-persona-icon-115628952315akhsf8ncl.png" alt="persona-comentario" class="foto-perfil-comentario">
+                    <div class="contenido-comentario">
+                        <h3 class="usuario-comentario">Juan Martinez</h3>
+                        <p class="texto-comentario">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+                </div>
+                <a href="#" class="ver-comentarios">Ver todos los comentarios</a>
+                <div class="comentario">
+                    <input type="text" placeholder="Escribe un comentario..." class="escribir-comentario">
+                    <a href="iniciarSesion.html"><button class="boton-publicar-comentario">Publicar</button></a>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+
+    <footer
+            class="bg-primary-light dark:bg-primary-dark text-white md:min-h-44 md:flex mt-6"
+        >
+            <div
+                class="md:w-5/6 md:mx-auto flex flex-col space-y-4 md:space-y-0 md:flex-none md:grid md:grid-cols-3 md:items-center p-4"
+            >
+                <div class="md:mx-auto">
+                    <div class="flex flex-col">
+                        <a href="">¿Quienes somos?</a>
+                        <a href="">Ayuda y asistencia</a>
+                        <a href="">Condiciones</a>
+                        <a href="">Politica y Privacidad</a>
+                    </div>
+                </div>
+                <div class="md:mx-auto">
+                    <div class="flex flex-col">
+                        <a href="">Foro</a>
+                        <a href="">Categorias</a>
+                        <a href="">Cursos</a>
+                        <a href="">Preguntas Frecuentes</a>
+                    </div>
+                </div>
+                <div class="md:mx-auto">
+                    <div class="flex flex-col space-y-2">
+                        <h2>Contacto</h2>
+                        <div class="text-2xl flex justify-between w-40">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+
+    </body>
+
+    <script src="../app.js"></script>
+    <!-- <script>
+        function toggleDarkMode() {
+          document.documentElement.classList.toggle('dark');
+        }
+      </script> -->
 </html>
